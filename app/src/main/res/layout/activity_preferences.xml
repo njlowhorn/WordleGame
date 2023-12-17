@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreferencesActivity">
+
+    <TextView
+        android:id="@+id/letter_text"
+        android:layout_width="241dp"
+        android:layout_height="57dp"
+        android:text="Letter Length"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <RadioGroup
+        android:id="@+id/letter_length"
+        android:layout_width="252dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@id/random_choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letter_text">
+
+        <RadioButton
+            android:id="@+id/random_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random" />
+
+        <RadioButton
+            android:id="@+id/three_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/four_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/five_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/six_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <RadioButton
+            android:id="@+id/seven_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letter_length" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
